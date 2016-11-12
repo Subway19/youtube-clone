@@ -2,7 +2,7 @@
   "name": "youtube-clone",
   "version": "1.0.0",
   "description": "A Youtube clone implementing basic React concepts",
-  "main": "index.js",
+  "main": "MaterialApp.js",
   "repository": "https://github.com/Subway19/youtube-clone.git",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
