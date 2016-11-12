@@ -9,19 +9,21 @@ import ReactDOM from 'react-dom';
 import App from './index';
 
 import mui from 'material-ui';
-import injectTapEventPlugin from 'react-tap-event-plugin';
+
 import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
-import {red600} from 'material-ui/styles/colors';
+import {red600,teal700} from 'material-ui/styles/colors';
 
-injectTapEventPlugin();
 
 
 const muiTheme = getMuiTheme({
   palette: {
-    primary1Color: red600
+    primary1Color: red600,
+    accent1Color:teal700
+
+
   },
   appBar: {
     height: 50,

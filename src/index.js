@@ -9,7 +9,6 @@ import Contact from './components/contact';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-import ContactDialog from './components/dialog';
 
 import mui from 'material-ui';
 import FlatButton from 'material-ui/FlatButton';
@@ -17,6 +16,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import {red600} from 'material-ui/styles/colors';
+
+
+
 
 const API_KEY = 'AIzaSyAuQCVeNfKhtRk9KlChQPT1nO27DPO_5Ss';
 
@@ -35,8 +37,6 @@ class App extends Component {
 
 
   }
-
-  //currently MD only available for this component and not for all components
 
   videoSearch(term) {
     YTSearch({key: API_KEY, term: term}, (videos) => {
@@ -62,11 +62,8 @@ class App extends Component {
           <br />
           <hr/>
           <Contact />
-          <FlatButton label="Default" />
-            <FlatButton label="Default" />
-    <FlatButton label="Primary" primary={true} />
-    <FlatButton label="Secondary" secondary={true} />
-    <ContactDialog />
+        
+          
       
       </div>
     );
