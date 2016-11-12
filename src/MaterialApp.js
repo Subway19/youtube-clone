@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-import App from './index';
+import App from './components/index';
 
 import mui from 'material-ui';
 
