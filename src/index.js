@@ -1,3 +1,5 @@
+//this is the second starting point of our app
+
 import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
@@ -7,7 +9,7 @@ import Contact from './components/contact';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-
+import ContactDialog from './components/dialog';
 
 import mui from 'material-ui';
 import FlatButton from 'material-ui/FlatButton';
@@ -19,18 +21,6 @@ import {red600} from 'material-ui/styles/colors';
 const API_KEY = 'AIzaSyAuQCVeNfKhtRk9KlChQPT1nO27DPO_5Ss';
 
 
-//var ThemeManager = new mui.Styles.ThemeManager();
-//var Colors = mui.Styles.Colors;
-
-const muiTheme = getMuiTheme({
-  palette: {
-    primary1Color: red600
-  },
-  appBar: {
-    height: 50,
-    width:10
-  },
-});
 
 class App extends Component {
   constructor(props) {
@@ -62,12 +52,8 @@ class App extends Component {
 
     return (
       <div>
-         <MuiThemeProvider muiTheme={muiTheme}>
-            <AppBar title="Youtube Clone" />
 
-        </MuiThemeProvider>
-    
-
+        <AppBar title="Youtube Clone" />
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
@@ -76,10 +62,17 @@ class App extends Component {
           <br />
           <hr/>
           <Contact />
+          <FlatButton label="Default" />
+            <FlatButton label="Default" />
+    <FlatButton label="Primary" primary={true} />
+    <FlatButton label="Secondary" secondary={true} />
+    <ContactDialog />
       
       </div>
     );
   }
 }
 
-ReactDOM.render(<App />, document.querySelector('.container'));
+
+
+export default App;
