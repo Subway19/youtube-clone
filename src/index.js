@@ -4,7 +4,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
-import Contact from './components/contact';
+import Contact from './components/contact.js';
 
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
