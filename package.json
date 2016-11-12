@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Youtube clone implementing basic React concepts",
   "main": "index.js",
-  "repository": " ",
+  "repository": "https://github.com/Subway19/youtube-clone.git",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
